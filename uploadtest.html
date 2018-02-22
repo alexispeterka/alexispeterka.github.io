@@ -85,6 +85,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
     background-color: #e9ecef;
     border-left: 1px solid #ced4da;
     border-radius: 0 .25rem .25rem 0;
+    cursor: pointer;
 }
 </style>
     <!-- Fav and touch icons -->
@@ -118,6 +119,14 @@ setTimeout(function() {
 document.location.href = link.href;
 }, 100);
 }
+
+$("input[type=file]").change(function (event) {
+  var fieldVal = event.target.files[0].name;
+  if (fieldVal != undefined || fieldVal != "") {
+    $(this).next(".custom-file-control").attr('data-content', fieldVal);
+  }
+});
+
 </script>
 </head>
 
