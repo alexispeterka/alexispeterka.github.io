@@ -913,6 +913,7 @@ ol ul {
 
 li {
   line-height: 20px;
+  padding-bottom: 5px;
 }
 
 ul.unstyled,
