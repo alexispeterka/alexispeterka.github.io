@@ -136,11 +136,11 @@ h1.case_study {
 	margin-top: 50px;
 }
 
-.portfolio .span8.web {
+.web {
 	border: 1px solid #ccc;
 }
 
-.portfolio .span8.web:before {
+.web:before {
 	content: url('../images/web_bar.gif');
 	display: block;
 	margin-bottom: -10px;
