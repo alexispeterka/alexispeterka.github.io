@@ -1,24 +1,113 @@
 <html>
   <head>
     <style>
+      body {
+        font-family: "Averta", sans-serif;
+      }
       .widget {
         width: 620px;
         height: 360px;
         background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 100px;
       }
-      .button {
+      .button-container{
+        padding-top: 100px;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+      }
+      .button-gradient {
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        width: 40%;
         border-radius: 4px;
+        border: 1px solid #F1F1EE;
+        padding: 20px;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;}
+      }
+      .button-wavy {
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        width: 40%;
+        border-radius: 4px;
+        border: 1px solid #F1F1EE;
+        padding: 15 20 5 20;
+      }
+      .wavy {
+        position: relative;
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        height: 25px;
+        overflow: hidden;
+      }
+      .wavy::before {
+        content: 'aaaaaaaaaaaaaaaaa';
+        position: absolute;
+        top: -25px;
+        left: 0;
+        font-size: 2em;
+        color: transparent;
+        padding-bottom:10px;
+        text-decoration-style: wavy;
+        text-decoration-color: #FF005A;
+        text-decoration-line: underline;
+        animation: wavy 2s linear infinite;
+      }
+      @keyframes wavy
+      {
+        0%{
+          transform: translateX(-1px);
+          }
+        100%{
+          transform: translateX(-45px);
+        }
+
       }
     </style>
   </head>
   <body>
     <div class="widget">
-      <div class="button">
-        dog
-      </div>
-      <div class="button">
-        cat
+      <h1>What's your favorite pet?</h1>
+      <div class="button-container">
+        <div class="button-gradient">
+          dog
+        </div>
+        <div class="button-gradient">
+          cat
+        </div>
       </div>
     </div>
+
+    <div class="widget">
+      <h1>What's your favorite pet?</h1>
+      <div class="button-container">
+        <div class="button-wavy">
+          dog
+          <div class="wavy"></div>
+        </div>
+        <div class="button-wavy">
+          cat
+          <div class="wavy"></div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
