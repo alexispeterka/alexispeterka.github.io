@@ -9,9 +9,11 @@ body {
   padding: 20px;
   margin-bottom: 100px;
 }
+
 @media only screen and (max-width: 650px) {
     .widget {
       width: auto;
+      background-color: #999;
     }
 }
 .button-container{
@@ -32,6 +34,7 @@ body {
 .button:hover {
   background-color: #FF005A;
   color: #fff;
+  animation: none;
 }
 
 .gradient {
@@ -89,9 +92,14 @@ body {
   }
 }
 
-.heartbeat {
+.heartbeat-first {
   animation: heartbeat 2s ease-in-out infinite both;
-  background: #ccc;
+  border-color: #FF005A;
+}
+.heartbeat-second {
+  animation: heartbeat 2s ease-in-out infinite both;
+  animation-delay: 1s;
+  border-color: #FF005A;
 }
 
   @keyframes heartbeat {
