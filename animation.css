@@ -1,18 +1,22 @@
 body {
   font-family: "Averta", sans-serif;
+  background-color: #fcfcfc;
+  margin: 0 auto;
 }
-.widget {
+.poll, .contact {
   width: 620px;
   height: 300px;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 2px 0px 2px 0px solid #ccc;
   padding: 20px;
   margin-bottom: 100px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 @media only screen and (max-width: 650px) {
-    .widget {
+    .poll .contact {
       width: auto;
+      height: auto;
       background-color: #999;
     }
 }
@@ -21,6 +25,9 @@ body {
   margin: auto;
   width: 100%;
   text-align: center;
+}
+.contact .button-container{
+  padding-top:20px;
 }
 .button {
   display: inline-block;
@@ -31,10 +38,14 @@ body {
   border: 1px solid #F1F1EE;
   padding: 20px;
 }
+.contact .button {
+  width: 92%;
+  font-size: 1.4em;
+}
 .button:hover {
   background-color: #FF005A;
   color: #fff;
-  animation: none;
+  animation-play-state: paused;
 }
 
 .gradient {
@@ -125,3 +136,46 @@ body {
               animation-timing-function: ease-out;
     }
   }
+
+.bounce {
+  animation: bounce 0.9s infinite both;
+}
+
+@keyframes bounce {
+  0% {
+            transform: translateY(-25px);
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+            transform: translateY(-14px);
+            animation-timing-function: ease-in;
+  }
+  65% {
+            transform: translateY(-6px);
+            animation-timing-function: ease-in;
+  }
+  82% {
+            transform: translateY(-3px);
+            animation-timing-function: ease-in;
+  }
+  93% {
+            transform: translateY(-4px);
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+            transform: translateY(0px);
+            animation-timing-function: ease-out;
+  }
+  100% {
+            transform: translateY(0px);
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
