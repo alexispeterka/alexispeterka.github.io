@@ -72,20 +72,19 @@
   padding-top:20px;
   float:right;
   text-decoration: none;
-  color:#db6b3c;
 }
 
 .navlinks a{
   text-decoration: none;
   padding:10px;
   margin:10px;
-  color:#db6b3c;
+  color:#307F79;
 }
 
 .navlinks .active {
   text-decoration: none;
-  color:#db6b3c;
-  border-bottom: 3px solid #db6b3c;
+  color:#307F79;
+  border-bottom: 3px solid #307F79;
 }
 
 .navlinks a:hover {
