@@ -203,8 +203,26 @@ h1.case_study {
 	padding-top: 10px;
 }
 
+.portfolio ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .portfolio li {
-   list-style-image: url('../images/angle-right.png');
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.portfolio li {
+ /*  list-style-image: url('../images/angle-right.png');*/
+}
+
+.portfolio li:before {
+  content: ">";
+  padding-right:5px;
+  font-size: 90%;
+  vertical-align: text-top;
 }
 
 .portfolio_header {
