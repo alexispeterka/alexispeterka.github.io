@@ -142,13 +142,47 @@ document.location.href = link.href;
 
 					<blockquote>“The data not all coming over has made me not use [ActionButton]. If it was all smooth and just working great, we’d probably be using it a lot more”</blockquote>
 
-					<p>I created high-fidelity mockups of each integration before requirements were written, in order to facilitate ideation. I continued iterating on solutions based on heuristic evaluation and internal stakeholder feedback.</p>
-
-
+					<p>I created high-fidelity mockups of each integration before requirements were written, in order to facilitate ideation. I continued iterating on solutions based on heuristic evaluation and internal stakeholder and customer feedback.</p>
 					</p>
-					<p><img src="images/portfolio/ab_integrations.png" alt="ab_integrations" > </p>
-					<div class="photo_caption">The evolution of a new feature design.</div>
-          
+
+					<br>
+					<h4>First iteration</h4>
+					<p><a href="mages/portfolio/ABintegrations1.png"><img src="images/portfolio/ABintegrations1.png" alt="ab_integrations" ></a> </p>
+					<div class="photo_caption">First pass - mimicking design patterns from NationBuilder.</div>
+
+					<p>When I started working on the user experience for how customers would get data to flow seamlessly from ActionButton into NationBuilder, I mimicked a common design pattern from NationBuilder - the actions/more menu. Clicking the menu item for "Add to path" would open a modal with all the selections currently available in NationBuilder.</p>
+
+					<ul>
+						<li>Pros: Uses a design pattern NationBuilder customers are used to, includes all existing functionality</li>
+						<li>Cons: I avoid modals when possible, and once all five new integrations are added, that menu is gonna be CHONKY</li>
+					</ul>
+
+					<br>
+					<h4>Second iteration</h4>
+  
+  				<p><a href="mages/portfolio/ABintegrations2.png"><img src="images/portfolio/ABintegrations2.png" alt="ab_integrations" > </a></p>
+					<div class="photo_caption">Second pass - thinking more about flow.</div>
+
+					<p>The more I thought about how the menu would feel with all the new integrations in addition to share and embed CTAs, the less I believed the integrations belonged in the dashboard menu. I decided to remove the share and embed functionality from this page (it's still available in the menu) and validated with customers that it made more sense to set up integrations at this step and share and embed after finishing.</p>
+
+					<ul>
+						<li>Pros: Expandable based on checkbox, includes all existing functionality</li>
+						<li>Cons: Less discoverable for users, still very heavy</li>
+					</ul>
+					<br>
+					<h4>Third and final iteration</h4>
+
+  				<p><a href="mages/portfolio/ABintegrations3.png"><img src="images/portfolio/ABintegrations3.png" alt="ab_integrations" > </a></p>
+					<div class="photo_caption">Third pass - making good decisions based on data.</div>
+
+					<p>After showing this to the product manager, he looked at usage data and determined that the majority of the options weren't being used. We made the decision to remove the little-used dropdown options and focus on the primary use case.</p>
+
+					<ul>
+						<li>Pros: Discoverable, easy to understand</li>
+						<li>Cons: Removes some power user functionality</li>
+					</ul>
+
+        
           <p>We’re currently halfway through implementation of the missing integrations, and I’m working closely with engineers to think through error states and edge cases as well as core user flows.
 					</p>
 
@@ -158,14 +192,22 @@ document.location.href = link.href;
 					<blockquote>“Nationbuilder is quite powerful and works very well, but the friction involved in integrating ActionButton as a separate piece of software makes it less useful to me”
 					</blockquote>
 
-					<p><img src="images/portfolio/AB_phase2.png" alt="AB_phase2" > </p>
+					<p><a href="images/portfolio/AB_phase2.png" target="_new"><img src="images/portfolio/AB_phase2.png" alt="AB_phase2" ></a> </p>
 					<div class="photo_caption">Part of the clickable prototype for validating phase 2.</div>
 
 					<h3>Phase ?</h3>
 					<p>Independent of planned work, I developed my own vision for what a long-term integration could be. This “concept car” included a number of ideas that have gained traction within the company. I intend to validate some of these concepts with customers in the near future.</p>
 
-					<p><img src="images/portfolio/conceptcar.png" alt="conceptcar"></p>
+					<p><a href="images/portfolio/conceptcar.png" target="_new"><img src="images/portfolio/conceptcar.png" alt="conceptcar"></a></p>
 					<div class="photo_caption">Initial sketches for a long-term vision for integrations.</div>
+
+					<p>Starting with pen and paper, I started to explore how we could create a long-term vision for how ActionButton could live holistically within NationBuilder. A key part of this process was conceptualizing how we could build toward that vision with quick wins to deliver customer value on a regular cadence. One of those was creating a hybrid version of the Custom Email Targets and Contact Your Lawmakers ActionButtons, a common ask from customers.</p>
+
+					<p><a href="images/portfolio/ABinNBemail.png" target="_new"><img src="images/portfolio/ABinNBemail.png" alt="ABinNBemail"></a></p>
+					<div class="photo_caption">Another incremental improvement that builds toward a more complete integration.</div>
+
+					<p>Another concept was to leverage the popularity of NationBuilder's newly built email builder to fulfill a customer wish (including ActionButtons in NationBuilder emails) as well as expose more customers to ActionButton.
+					</p>
 
 					<h2>Results and Takeaways</h2>
 					<p>We’re releasing the phase 1 integrations on a regular cadence, and hope to meet expected functionality within two quarters. Meanwhile, the phase 2 work has been put on hold for 9 months so we can meet other obligations within the NationBuilder product.
