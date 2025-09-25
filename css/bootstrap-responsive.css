@@ -439,6 +439,10 @@
   .row-fluid .thumbnails {
     margin-left: 0;
   }
+  .navlinks {
+    float:right; 
+    vertical-align: middle;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -781,6 +785,11 @@
   .uneditable-input.span1 {
     width: 28px;
   }
+  .navlinks {
+    float:right; 
+    vertical-align: middle;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -792,6 +801,7 @@
   body {
     padding-right: 20px;
     padding-left: 20px;
+    margin-top:0;
   }
   .navbar-fixed-top,
   .navbar-fixed-bottom,
@@ -812,7 +822,7 @@
     margin-left: 0;
   }
   .container {
-    width: auto;
+    width: 100%;
   }
   .row-fluid {
     width: 100%;
@@ -884,6 +894,9 @@
   .modal.fade.in {
     top: 20px;
   }
+  .navlinks {
+    float:left;
+  }
 }
 
 @media (max-width: 480px) {
@@ -954,11 +967,16 @@
 	.carousel .item {
 		padding-top: 0;
 	}
+  .navlinks {
+    float:left;
+  }
+
 }
 
 @media (max-width: 979px) {
   body {
     padding-top: 0;
+    margin-top:0;
   }
   .navbar-fixed-top,
   .navbar-fixed-bottom {
