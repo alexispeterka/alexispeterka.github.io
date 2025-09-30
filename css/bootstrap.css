@@ -72,25 +72,23 @@
   text-decoration: none;
   padding:10px;
   margin:10px;
-  color:#307F79;
+  /*color:#307F79;*/
 }
 
 .navlinks .active {
   text-decoration: none;
-  color:#307F79;
-  border-bottom: 3px solid #307F79;
+  border-bottom: 3px solid #0063AE;
 }
 
 .navlinks a:hover {
   text-decoration: none;
-  color:#db6b3c;
-  border-bottom: 3px solid #db6b3c;
+  border-bottom: 3px solid #0063AE;
 }
 
 .gallery_image {
   display: block;
   position:relative;
-  border:10px solid #fff;
+  padding:10px;
   text-align: center;
   background-color: #fff;
 }
@@ -109,6 +107,29 @@
 .gallery_image:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color:#666;
+}
+
+.index_image{
+  border: 1px solid #eee;
+}
+
+.index_image:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color:#666;
+}
+
+.button {
+  background-color: #0063AE;
+  border-radius: 6px;
+  color:#ffffff;
+  padding:8px 20px;
+  text-decoration: none;
+}
+
+a.button:hover {
+  background-color: #005493;
+  color:#ffffff;
+  text-decoration: none;
 }
 
 /* Custom container */
@@ -177,6 +198,12 @@ h1.case_study {
 
 .portfolio .row{
 	margin-top: 50px;
+}
+
+.index {
+  border-radius: 12px;
+  outline: 2px solid #eeeeee;
+  /*background-color: #F8F6F4;*/
 }
 
 .web {
@@ -392,12 +419,12 @@ body {
 }
 
 a {
-  color: #DB6B3C;
+  color: #0063AE;
   text-decoration: none;
 }
 
 a:hover {
-  color: #005580;
+  color: #0063AE;
   text-decoration: underline;
 }
 
@@ -431,6 +458,7 @@ a.orange:hover {
 .row {
   margin-left: 0px;
   *zoom: 1;
+  /*padding:20px 0px;*/
 }
 
 .row:before,
@@ -1028,9 +1056,9 @@ dd {
 }
 
 hr {
-  margin: 0;
+  margin: 20px 0;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #eeeeee;
 }
 
 abbr[title],
